@@ -48,14 +48,20 @@ body {
 .subtitle {
     font-size: var(--md);
     color: var(--very-light-pink);
-    margin: 0 0 60px 0;
+    margin: 0 0 24px 0;
     text-align: center;
 }
 
-.email-icon{
-    width: 150px;
-    margin: 0 0 60px 0;
+.email-image{
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    background-color: var(--text-input-field);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     justify-self: center;
+    margin: 0 0 24px 0;
 }
 
 .primary-button {
