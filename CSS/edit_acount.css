@@ -46,37 +46,33 @@ body {
 .label {
     color: var(--dark);
     font-size: var(--sm);
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     font-weight: bold;
 }
 
-.input {
-    border: none;
-    border-radius: 6px;
-    background-color: var(--text-input-field);
-    color: var(--dark);
-    height: 32px;
-    padding: 4px 8px;
-    margin-bottom: 28px;
+.value {
+    font-size: var(--sm);
+    color: var(--very-light-pink);
+    margin: 0 0 40px;
 }
 
-.input-password {
-    margin-bottom: 36px;
-}
-
-.primary-button {
-    background-color: var(--hospital-green);
-    color: var(--white);
+.secondary-button {
+    background-color: var(--white);
+    border-color: var(--hospital-green);
+    border-style: solid;
+    border-width: 2px;
+    color: var(--hospital-green);
     font-weight: bold;
-    border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     height: 52px;
     font-size: var(--md);
     cursor: pointer;
 }
 
-.primary-button:hover {
+.secondary-button:hover {
     background-color: var(--hospital-green-hover);
+    color: var(--white);
+    opacity: 60%;
 }
 
 @media (max-width: 640px) {
