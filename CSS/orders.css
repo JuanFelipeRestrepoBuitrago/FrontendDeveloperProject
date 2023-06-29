@@ -39,6 +39,12 @@ body {
     margin-bottom: 40px;
 }
 
+.orders {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
 .order {
     display: grid;
     grid-template-columns: auto 1fr auto;
