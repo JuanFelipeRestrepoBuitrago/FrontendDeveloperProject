@@ -16,3 +16,30 @@ body {
     margin: 0;
     background-color: var(--white);
 }
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 400px;
+}
+
+.title {
+    font-size: var(--lg);
+    font-weight: bold;
+    color: var(--dark);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
