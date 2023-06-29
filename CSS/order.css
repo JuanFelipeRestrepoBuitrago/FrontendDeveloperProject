@@ -99,3 +99,15 @@ body {
     object-fit: cover;
     border-radius: 16px;
 }
+
+@media (max-width: 640px) {
+    .title {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 300px;
+    }
+}
