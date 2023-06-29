@@ -1,0 +1,72 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --hospital-green-hover: #9BCBA6;
+    --sm: 16px;
+    --md: 20px;
+    --lg: 24px;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    background-color: var(--white);
+}
+
+.mobile-menu {
+    position: fixed;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: bold;
+}
+
+.mobile-menu a:hover {
+    text-decoration: underline;
+    color: var(--black);
+}
+
+.mobile-menu ul {
+    padding: 0;
+    margin: 24px 0 0 0;
+    list-style: none;
+}
+
+.mobile-menu ul:first-child {
+    border-bottom: 1px solid var(--very-light-pink);
+}
+
+.mobile-menu ul li {
+    margin-bottom: 24px;
+}
+
+.mobile-menu ul:last-child li {
+    margin-bottom: 0;
+}
+
+#email {
+    display: inline-block;
+    margin-bottom: 4px;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+#sign-out {
+    color: var(--hospital-green);
+    font-size: 12px;
+}
+
+#sign-out:hover {
+    color: var(--hospital-green-hover);
+}

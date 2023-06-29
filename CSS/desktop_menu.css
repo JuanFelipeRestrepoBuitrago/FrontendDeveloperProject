@@ -1,0 +1,63 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --hospital-green-hover: #9BCBA6;
+    --sm: 16px;
+    --md: 20px;
+    --lg: 24px;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    background-color: var(--white);
+}
+
+.desktop_menu {
+    width: 100px;
+    height: auto;
+    border: 1px solid var(--very-light-pink);
+    border-radius: 6px;
+    padding: 20px 20px 4px 20px;
+}
+
+.desktop_menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.desktop_menu ul li {
+    text-align: end;
+    padding-bottom: 16px;
+}
+
+.desktop_menu ul li a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: bold;
+    font-size: var(--sm);
+}
+
+.desktop_menu ul li a:hover {
+    color: var(--black);
+    text-decoration: underline;
+}
+
+.desktop_menu ul li:last-child {
+    border-top: 1px solid var(--very-light-pink);
+    padding-top: 16px;
+}
+
+.desktop_menu ul li:last-child a {
+    color: var(--hospital-green);
+}
+
+.desktop_menu ul li:last-child a:hover {
+    color: var(--hospital-green-hover);
+    text-decoration: underline;
+}
