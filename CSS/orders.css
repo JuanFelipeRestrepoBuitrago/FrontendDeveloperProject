@@ -38,3 +38,29 @@ body {
     color: var(--dark);
     margin-bottom: 40px;
 }
+
+.order {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 16px;
+    place-items: center;
+}
+
+p {
+    font-size: var(--sm);
+    color: var(--dark);
+    margin: 0;
+    font-weight: bold;
+}
+
+.value {
+    width: 100%;
+    text-align: end;
+    margin-right: 8px;
+}
+
+.order-data p:nth-child(2) {
+    margin-top: 2px;
+    color: var(--dark);
+    font-weight: 380;
+}
