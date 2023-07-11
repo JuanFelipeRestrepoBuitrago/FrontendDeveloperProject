@@ -1,3 +1,4 @@
+/* General */
 :root {
     --white: #FFFFFF;
     --black: #000000;
@@ -22,6 +23,8 @@ body {
     display: none;
 }
 
+/* Navbar */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -32,6 +35,7 @@ nav {
 
 .menu-image {
     display: none;
+    cursor: pointer;
 }
 
 .logo {
@@ -101,6 +105,8 @@ nav {
     justify-content: center;
 }
 
+/* Email Menu in Desktop */
+
 .desktop_menu {
     background-color: var(--white);
     width: 100px;
@@ -150,6 +156,61 @@ nav {
     text-decoration: underline;
 }
 
+/* Mobile Menu */
+
+.mobile-menu {
+    position: absolute;
+    padding: 20px;
+    width: 300px;
+    height: auto;
+    top: 60px;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: bold;
+}
+
+.mobile-menu a:hover {
+    text-decoration: underline;
+    color: var(--black);
+}
+
+.mobile-menu ul {
+    padding: 0;
+    margin: 24px 0 0 0;
+    list-style: none;
+}
+
+.mobile-menu ul:first-child {
+    border-bottom: 1px solid var(--very-light-pink);
+}
+
+.mobile-menu ul li {
+    margin-bottom: 24px;
+}
+
+.mobile-menu ul:last-child li {
+    margin-bottom: 0;
+}
+
+#email {
+    display: inline-block;
+    margin-bottom: 4px;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+#sign-out {
+    color: var(--hospital-green);
+    font-size: 12px;
+}
+
+#sign-out:hover {
+    color: var(--hospital-green-hover);
+}
+
 @media (max-width:980px) {
     .desktop_menu {
         left: 725px;
@@ -161,21 +222,17 @@ nav {
         display: block;
     }
 
-    .navbar-left ul {
-        display: none;
-    }
-
-    .navbar-email {
+    .desktop_menu, .navbar-email, .navbar-left ul {
         display: none;
     }
 
     nav {
         padding: 12px 20px;
     }
-
-    .desktop_menu {
-        display: none;
-    }
-
 }
 
+@media (min-width: 641px) {
+    .mobile-menu {
+        display: none;
+    }
+}
