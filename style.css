@@ -87,6 +87,7 @@ nav {
     display: flex;
     flex-direction: row;
     position: relative;
+    cursor: pointer;
 }
 
 .navbar-shopping-cart div {
@@ -211,6 +212,112 @@ nav {
     color: var(--hospital-green-hover);
 }
 
+/* Shopping Cart */
+
+.shopping-cart {
+    width: 400px;
+    position: absolute;
+    right: 0;
+    padding: 0 24px 24px 24px;
+    box-sizing: border-box;
+    background-color: var(--white);
+}
+
+.title-container {
+    display: flex;
+}
+
+.title-container img {
+    transform: rotate(180deg);
+    margin-right: 24px;
+} 
+
+.title {
+    font-size: var(--lg);
+    font-weight: bold;
+}
+
+.order-content {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 16px;
+    
+}
+
+.cart-product {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 16px;
+    align-items: center;
+}
+
+.cart-product figure {
+    margin: 0;
+}
+
+.cart-product p:nth-child(2) {
+    color: var(--very-light-pink);
+    font-size: 15px;
+}
+
+.cart-product p:nth-child(3) {
+    color: var(--dark);
+    font-weight: bold;
+    font-size: var(--sm);
+}
+
+.cart-product figure img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.close-image {
+    cursor: pointer;
+}
+
+.order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--text-input-field);
+    border-radius: 8px;
+    height: auto;
+    padding: 10px 28px 10px 16px;
+    font-size: var(--sm);
+    color: var(--dark);
+    font-weight: bold;
+}
+
+.order .text {
+    font-size: var(--sm);
+    color: var(--dark);
+    margin: 0;
+    font-weight: bold;
+}
+
+.order .value {
+    color: var(--dark);
+    font-weight: bold;
+}
+
+.primary-button {
+    background-color: var(--hospital-green);
+    border: none;
+    border-radius: 8px;
+    height: 52px;
+    color: var(--white);
+    font-size: var(--md);
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+}
+
+.primary-button:hover {
+    background-color: var(--hospital-green-hover);
+}
+
 @media (max-width:980px) {
     .desktop_menu {
         left: 725px;
@@ -228,6 +335,10 @@ nav {
 
     nav {
         padding: 12px 20px;
+    }
+
+    .shopping-cart {
+        width: 100%;
     }
 }
 
